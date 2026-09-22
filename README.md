@@ -7,7 +7,7 @@ A mobile-first Next.js + Firebase app for marking each field device as installed
 1. Create a Firebase project and a Firestore database.
 2. In Authentication, enable **Email/Password** and create each technician as a user.
 3. Register a Web App in Firebase Project Settings.
-4. Copy `.env.example` to `.env.local` and paste in the six web-app configuration values.
+4. The supplied Agulhas Firebase web configuration is already connected. Environment variables remain available if the project is changed later.
 5. Paste `firestore.rules` into Firestore Rules and publish them.
 
 ## Run locally
@@ -19,7 +19,7 @@ npm run dev
 
 ## Deploy to Vercel
 
-Import the repository into Vercel and add the same six `NEXT_PUBLIC_FIREBASE_*` values under Project Settings → Environment Variables. Deploy after saving them.
+Import the repository into Vercel and deploy. The Firebase web configuration is already included; Vercel environment variables are optional overrides.
 
 ## Load devices
 
