@@ -4,9 +4,9 @@ import { useEffect, useMemo, useState } from "react";
 import { Check, ChevronDown, CircleAlert, LogOut, Search, Settings2, Upload, X } from "lucide-react";
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut, User } from "firebase/auth";
 import { collection, doc, onSnapshot, serverTimestamp, setDoc, writeBatch } from "firebase/firestore";
-import { auth, db, firebaseReady } from "@/lib/firebase";
-import { blankStages, Device, Stage, stages } from "@/lib/types";
-import { seedDevices } from "@/lib/seed";
+import { auth, db, firebaseReady } from "../lib/firebase";
+import { blankStages, Device, Stage, stages } from "../lib/types";
+import { seedDevices } from "../lib/seed";
 
 const stageLabels: Record<Stage, string> = { installed: "Installed", wired: "Wired", labelled: "Labelled", tested: "Tested" };
 
